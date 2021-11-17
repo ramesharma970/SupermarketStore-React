@@ -6,20 +6,20 @@ import '../assets/css/Home.css';
 
 const Footerr = () => {
     return (
-        <div className='footer'>
-            <Container>
-                <Row>
-                    <Col>
-                    <h3>   CONTACT </h3>
-                    <ListGroup  variant="flush">
+  <div className='footer'>
+            <Container className='container '>
+                <Row className='w3_footer_grids m-3'>
+                    <Col className='w3_footer_grid m-3'>
+                    <h3 className='footer-title' >   CONTACT </h3>
+                    <ListGroup className='address' bg='dark'  >
                         <ListGroup.Item  > <i> <MdLocationOn/></i>1234k Avenue, 4th block <span> New York City.</span> </ListGroup.Item>
                         <ListGroup.Item ><i><BsEnvelope/></i>  info@example.com</ListGroup.Item>
                         <ListGroup.Item><i><MdCall/></i> +1234 567 567</ListGroup.Item>
                        
                     </ListGroup>
                     </Col>
-                    <Col>
-                    <h3> INFORMATION </h3>
+                    <Col className='w3_footer_grid m-3'>
+                    <h3  className='footer-title' > INFORMATION </h3>
                     <ListGroup  variant="flush">
                         <ListGroup.Item className='light' > <BsArrowRightShort/><Link to=''>About Us</Link> </ListGroup.Item>
                         <ListGroup.Item className='light'>  <BsArrowRightShort/><Link to=''>Contact Us</Link></ListGroup.Item>
@@ -30,8 +30,8 @@ const Footerr = () => {
                     </ListGroup>
 
                     </Col>
-                    <Col>
-                    <h3>   CATEGORY </h3>
+                    <Col className='w3_footer_grid m-3'>
+                    <h3  className='footer-title' >   CATEGORY </h3>
                     <ListGroup  variant="flush">
                         <ListGroup.Item className='light' > <BsArrowRightShort/><Link to=''> Groceries</Link></ListGroup.Item>
                         <ListGroup.Item className='light'>  <BsArrowRightShort/><Link to=''>Household</Link></ListGroup.Item>
@@ -42,8 +42,8 @@ const Footerr = () => {
                     </ListGroup>
 
                     </Col>
-                    <Col>
-                    <h3>   PROFILE </h3>
+                    <Col className='w3_footer_grid m-3'>
+                    <h3  className='footer-title' >   PROFILE </h3>
                     <ListGroup  variant="flush">
                         <ListGroup.Item className='light' > <BsArrowRightShort/><Link to=''>Store</Link> </ListGroup.Item>
                         <ListGroup.Item className='light'>  <BsArrowRightShort/><Link to=''>My Cart</Link></ListGroup.Item>
@@ -54,12 +54,14 @@ const Footerr = () => {
                     </ListGroup>
                     </Col>
                 </Row>
-            </Container>
-            <div class="container">
+                <div class="container">
 				<p>© 2017 Super Market. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
+            </Container>
+            </div>
+         
             
-        </div>
+       
     )
 }
 
