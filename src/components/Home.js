@@ -3,6 +3,7 @@ import Topheaderr from './Topheader';
 import Headerr from './Header'
 import Navbar1 from './Navbar';
 import Homesliderr from './Homeslider';
+import Brands from './Brand';
 import Footerr from './Footer';
 import Bottomfooterr from './Bottomfooter';
 
@@ -20,6 +21,7 @@ const Home = () => {
             <Headerr/>
             <Navbar1/>
             <Homesliderr/>
+            <Brands/>
             <Footerr />
             <Bottomfooterr/>
 

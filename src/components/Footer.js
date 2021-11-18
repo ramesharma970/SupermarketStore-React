@@ -11,7 +11,7 @@ const Footerr = () => {
                 <Row className='w3_footer_grids m-3'>
                     <Col className='w3_footer_grid m-3'>
                     <h3 className='footer-title' >   CONTACT </h3>
-                    <ListGroup className='address' bg='dark'  >
+                    <ListGroup className='address' bg='inherit' id='footer-list1'  >
                         <ListGroup.Item  > <i> <MdLocationOn/></i>1234k Avenue, 4th block <span> New York City.</span> </ListGroup.Item>
                         <ListGroup.Item ><i><BsEnvelope/></i>  info@example.com</ListGroup.Item>
                         <ListGroup.Item><i><MdCall/></i> +1234 567 567</ListGroup.Item>
@@ -54,9 +54,9 @@ const Footerr = () => {
                     </ListGroup>
                     </Col>
                 </Row>
-                <div class="container">
-				<p>© 2017 Super Market. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-			</div>
+                <div className="bottom-title">
+				    <p className='text-secondary'>© 2017 Super Market. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			    </div>
             </Container>
             </div>
          
