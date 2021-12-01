@@ -85,13 +85,13 @@ a:-webkit-any-link {
 
 .w3l_search form input
 {
-font-size: 22px;
+font-size: 16px;
 padding: 2px;
 
 }
 .w3l_search form button{
     margin-left: 2px;
-    font-size: 26px;
+    font-size: 20px;
     border-radius: 3px;
     width: 35px;
     background-color: #fe9126 ;
@@ -141,6 +141,37 @@ color: var(--orange) !important;
 }
 /* navbar css ends here */
 
+/* banner css */
+.ban-bottom-w3l .banner{
+    display: flex;
+    padding: 10px;
+     
+}
+#banner-two{
+    height: fit-content;
+    width: fit-content;
+}
+
+.ban-bottom-w3l .banner img{
+    margin: 5px;
+    height: 85%;
+    width: 85%;
+    transform: scale(1);
+    transition: 0.9s ease-in-out;
+}
+.ban-bottom-w3l .banner img:hover{
+   transform: scale(1.06);
+
+}
+#banner-two{
+    display: flex;
+}
+
+
+
+
+/* banner css  here*/
+
 /* brands css  */
 
 .brands{
@@ -156,6 +187,7 @@ color: var(--orange) !important;
     text-transform: uppercase;
     position: relative;
     margin: 20px;
+    text-align: center;
   
 }
 
@@ -199,28 +231,141 @@ color: var(--orange) !important;
 }
 /* brands css  end here*/
 
+/* new offers */
+.newproducts-w3agile{
+   
+    padding:5rem 0;
+    background-color: #f5f5f5;    
+}
+.offer-title{
+    
+        font-size: 40px;
+        position: relative;
+        margin: 20px;
+        text-align: center;
+      
+   
+}
+.offer-title::after{
+    content: '';  
+    background: #3399cc;
+    height: 2px;
+    width: 15%;
+    position: absolute;
+    bottom: -25%;
+    left: 43%;
+}
+
+
+
+.newproducts-w3agile .container .agile_top_brands_grids{
+    display:flex;
+    margin-top:40px;
+   
+}
+
+/* new offers  end here*/
+/* card component css */
+.card-offer{
+    position:relative;
+    margin: 2px 15px;
+   
+}
+ .card-offer .cardbody{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .card-offer .cardbody .card-title{
+     font-size: 16px;
+     font-weight: normal;
+ }
+ .card-offer .cardbody .card-text{
+    font-weight: normal;
+}
+.card-offer .stars{
+    margin-bottom: 13px;
+    text-align:center
+}
+.card-offer .stars i{
+    color:#addef7;
+    font-size:14px;
+    
+}
+.card-offer img{
+    width:60%;
+    height: 60%;
+    align-self: center;
+}
+.offer{
+    position:absolute;
+    top:0%;
+    right:0%;
+    font-size: 16px;
+}
+
+.card-offer Button{
+    background-color: #3399cc;
+    margin-top: 15px;
+}
+/* card component css end here*/
+
 /* Footer css */
 .footer{
     background-color:  #2b2a2a;
-    padding: 30px;
+    padding: 10px;
     color:#fff;
 }
 
 .footer .container .w3_footer_grids .w3_footer_grid .footer-title{
   
     margin-top: 10px;
+    margin-left: 20px;
     margin-bottom: 40px;
 }
 
-
-
-.bottom-title{
-   
-    margin-top: 60px;
+.footer .container .w3_footer_grids .w3_footer_grid ul.cate li{
+    list-style-type: none;
+    margin-bottom: 1em;
+    color: #afafaf;
+    font-size: 14px;
+    font-weight: bold;
 }
-.bottom-title p a{
+
+.footer .container .w3_footer_grids .w3_footer_grid ul.cate li a{
+    color: #999;
+    text-decoration: none;
+   
+}
+.footer .container .w3_footer_grids .w3_footer_grid ul.cate li i{
+    color: #fe9126;
+    margin-right: 10px;
+  
+}
+#cate-item li i{
+border: 0.1px solid #fe9126;
+padding: 2px;
+font-size: 16px;
+align-content: center;
+}
+
+
+
+
+#bottom-title{
+   
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+#bottom-title p a{
     color:var(--orange);
     font-weight: bold;
+   
 
 }
 .bottom-title p{

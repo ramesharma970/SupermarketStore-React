@@ -1,4 +1,4 @@
-import { Route, Routes, Link} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { BiSearch } from 'react-icons/bi';
 import '../assets/css/Home.css';
@@ -17,7 +17,7 @@ const Headerr = () => {
                         </ul>
                     </div>
                     <div className='"w3ls_logo_products_lef'>
-                        <h1> <Link to='' className='linked3' >SUPER MARKET </Link></h1>
+                        <h1> <Link to='/' className='linked3' >SUPER MARKET </Link></h1>
                     </div>
                     <div className='w3l_search'>
                         <form action='#' method='POST'>

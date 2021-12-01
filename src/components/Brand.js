@@ -6,7 +6,7 @@ const Brands = () => {
         <div className='brands'>
             <Container>
                 <Row> 
-                <h3 className='brand-title'>Brand Store</h3>
+                <h3 className='brand-title'>Brand Store</h3>    
               
                 <Row  id='brand-row1'>
                     <Col> 

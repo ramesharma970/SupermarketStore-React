@@ -1,38 +1,481 @@
-.App {
+
+/* prodcut categories css */
+.categories{
+    
+    border: 1px solid #999; 
+    margin:10px;
+    font-weight: bold;
+}
+.categories ul.cate{
+    padding: 2em;
+}
+.categories h2{
+    font-size: 1.5em;
+    color: #212121;
+    margin: 0;
+    padding: 0.5em;
+    background: #f5f5f5;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+
+}
+
+.categories ul li{
+    display: block;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+.categories ul li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.categories ul li a i{
+    color: #fe9126;
+    margin-right: 10px;
+}
+
+ul.cate ul.cate-cate{
+   
+    margin-left: 2em;
+}
+
+/* prodcut categories css ends here */
+
+/* product css */
+.products{
+    padding: 5rem 0;
+}
+
+.products-grid .products-grids{
+    margin-bottom: 2em;
+   
+}
+.sorting{
+    float: right;
+    width: 35%;
+}
+
+select#country,
+select#country1{
+    border: 1px solid #212121;
+    outline: none;
+    font-size: 14px;
+    color: #212121;
+    padding: 0.5em;
+    width: 100%;
+    cursor: pointer;
+}
+
+option{
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.sorting-left{
+    float: right;
+    margin-right: 2em;
+    width: 25%;
+}
+.agile_top_brands_grids {
+    margin-top: 50px;
+}
+
+
+.column div.agile_top_brand_left_grid {
+    position: relative;
+    margin: 0;
+}
+
+
+/* product css end here*/
+
+
+/* paginationcomponent */
+.paginations{
+    margin: 4em auto 0;
+   
+}
+
+.paginations #paginations-boot .pagination-item{
+    color: #212121 !important;
+    font-weight: bold;
+}
+
+
+.paginations #paginations-boot #active-page{
+    background-color: #ffc229;
+    border-color: #EDB62B;
+}
+/* paginationcomponent  ends here*/
+
+/* pagination css here */
+.pagination{
+  
+    margin-top:30px;
+    text-align: right;
+}
+
+/* pagination css ends here */
+
+/* register css */
+.register{
+    padding: 5em 0;
+}
+
+.register .container .register-title{
+    text-align: center;
+    color: #212121;
+    padding-bottom: 0.5em;
+    position: relative;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+.register .container .register-title::after{
+    content: '';
+    background: #3399cc;
+    height: 2px;
+    width: 15%;
+    position: absolute;
+    bottom: -25%;
+    left: 43%;
+}
+.login-form-grids {
+    width: 45%;
+    padding: 3em;
+    background: #F7F7F9;
+    margin: 3em auto 0;
+}
+.login-form-grids h5,
+.login-form-grids h6
+{
+    font-size: 1em;
+    color: #212121;
+    text-transform: uppercase;
+    margin: 0 0 2em;
+}
+#register-button{
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    display: block;
+    width: 100%;
+    background: #3399cc;
+    margin: 1.5em 0 0;
+}
+#register-button:hover{
+    background: #fe9126;
+}
+
+.register-home {
+    margin: 2em 0 0;
+    text-align: center;
+}
+.register-home a {
+    padding: 8px 45px;
+    background: #9F9F9F;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+}
+.register-home a:hover{
+    background: #fe9126;
+}
+
+
+/* register css ends here*/
+
+/* login css*/
+.login{
+    padding: 5em 0;
+}
+.login .container .login-title{
+    text-align: center;
+    color: #212121;
+    padding-bottom: 0.5em;
+    position: relative;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.login .container .login-title::after{
+    content: '';
+    background: #3399cc;
+    height: 2px;
+    width: 15%;
+    position: absolute;
+    bottom: -25%;
+    left: 43%;  
+}
+.login-form-grids {
+    width: 45%;
+    padding: 3em;
+    background: #F7F7F9;
+    margin: 3em auto 0;
+}
+.forgot{
+    margin: 1.5em 0 0;
+}
+
+.forgot a{
+    color: #212121;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+
+}
+
+.login h4 {
+    margin: 2em 0 0.5em;
+    font-size: 1.5em;
+    color: #212121;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.login p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.8em;
+    margin: 0;
     text-align: center;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+
+.login p a {
+    color: #fe9126;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0 0.5em;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+}
+.login p a span {
+    top: 0.1em;
+    font-size: .7em;
+    left: 0.3em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* login css ends here*/
+
+/* Contact css */
+.about{
+    padding: 5em 0;
 }
 
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.w3_agileits_contact_grid_left {
+    padding: 0;
+    position: relative;
 }
 
-.App-link {
-    color: #61dafb;
+.agile_map iframe {
+    width: 100%;
+    min-height: 580px;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.agileits_w3layouts_map_pos {
+    position: absolute;
+    right: -15%;
+    top: 22%;
+    width: 50%;
+    padding: 2em;
+    background: #3399cc;
 }
+.agileits_w3layouts_map_pos1 {
+    padding: 2em;
+    border: 3px double #fff;
+}
+.agileits_w3layouts_map_pos h3 {
+    font-size: 1.5em;
+    color: #212121;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+}
+.agileits_w3layouts_map_pos p {
+    color: #fff;
+    line-height: 2em;
+    margin: 0.5em 0 1.5em;
+    font-weight: 600;
+}
+.wthree_contact_info_address{
+    margin: 0;
+    padding: 0;
+}
+.wthree_contact_info_address li {
+    list-style-type: none;
+    margin-bottom: 1em;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+.wthree_contact_info_address li i {
+    padding-right: 0.5em;
+}
+.wthree_contact_info_address li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+}
+.w3_agile_social_icons ul{
+    margin: 0;
+    padding: 0;
+}
+.w3_agile_social_icons ul li {
+    display: inline-block;
+    font-size: 14px;
+    text-align: -webkit-match-parent;
+}
+.w3_agile_social_icons  ul li a {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: transparent;
+}
+.w3_agile_social_icons_contact ul li .icon{
+    position: relative;
+    -webkit-perspective: 100px;
+    perspective: 100px;
+    overflow: visible;
+   
+}
+
+.w3_agileits_contact_grid_right{
+    padding: 0 4em 0 12em;
+    
+}
+.w3_agileits_contact_grid_right .w3_agile_header{
+    text-align: center;
+    color: #212121;
+    padding-bottom: 0.5em;
+    position: relative;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.w3_agileits_contact_grid_right .w3_agile_header:after {
+    content: '';
+    background: #3399cc;
+    height: 2px;
+    width: 15%;
+    position: absolute;
+    bottom: 0%;
+    left: 43%;
+}
+
+.w3_agileits_contact_grid_right{
+    padding: 0 4em 0 12em;
+    display: block;
+    margin-top: 0em;
+}
+.w3_agileits_contact_grid_right .contact-form{
+    padding: 1em;
+   
+   
+  
+}
+.w3_agileits_contact_grid_right .contact-form .contact-form-group{
+    margin-top: 2em;
+    display: inline-block;
+     background-color: #f5f5f5;
+    color: #212121;
+    font-weight: bold;
+    max-width: 100%;
+    width: calc(100% - 0em);
+       
+}
+#textareaheight{
+padding: 5px;
+height: 150px;
+
+}
+
+#help-button{
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    display: block;
+    width: 100%;
+    background: #212121;
+    margin: 1.5em 0 0;
+}
+#help-button:hover{
+    background: #3399cc;
+}
+
+
+/* Contact css ends here*/
+
+
+/* mycart css */
+.checkout{
+    padding: 5em 0;
+}
+
+.checkout h2 {
+    font-size: 1em;
+    color: #212121;
+    text-transform: uppercase;
+    margin: 0 0 3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.checkout h2 span {
+    color: #3399cc;
+}
+table{
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: table;
+    text-indent: initial;
+    border-color: grey;
+
+}
+table.timetable_sub {
+    width: 100%;
+    margin: 0 auto;
+}
+.timetable_sub thead {
+    background: #004284;
+    border-color: inherit;
+}
+.timetable_sub th{
+    text-align: center;
+    padding: 7px;
+    font-size: 14px;
+    color: #212121;
+    background: #fe9126;
+    color: #fff !important;
+    text-transform: capitalize;
+    border-right: 1px solid #fe9126;
+}
+/* mycart css end here*/
+
+
+
