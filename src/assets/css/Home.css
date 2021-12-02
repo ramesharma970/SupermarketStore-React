@@ -172,7 +172,36 @@ color: var(--orange) !important;
 
 /* banner css  here*/
 
+/* topselling css */
+.home-category{
+    padding:3rem 0;
+}
+.category-title{
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    margin: 20px;
+    text-align: center;
+
+}
+.category-title::after{
+    content: '';
+    
+    background: #3399cc;
+    height: 2px;
+    width: 15%;
+    position: absolute;
+    bottom: -25%;
+    left: 43%;
+}
+.topsell-category{
+    margin-top: 2rem;
+    width: 200px;
+}  
+/* topselling css ends here*/
+
 /* brands css  */
+
 
 .brands{
     background-color:#eed3b6;

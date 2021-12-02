@@ -43,7 +43,7 @@ useEffect(() => {
         <div className='newproducts-w3agile'>
         
             <Container className='container'>
-            <h3 className='offer-title'>Top Selling Offers</h3>
+            <h3 className='offer-title'>Today's Special</h3>
               <div className='agile_top_brands_grids'> 
               <Row>
               {

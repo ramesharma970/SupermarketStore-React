@@ -19,7 +19,7 @@ const Sliderr = () => {
         .then(res => res.json())
         .then(data => {
           
-        const detail =data.data[0].details;
+        const detail =data.data[5].details;
        setAdds(detail);
             
         })
