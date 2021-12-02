@@ -24,10 +24,11 @@ const Home = () => {
             <Headerr/>
             <Navbar1/>
             <Homesliderr/>
+            <Newofferr/>
             <Topsellin/>
             <Sliderr/>
             <Bannerbottomm/>
-            <Newofferr/>
+            
             <Brands/>
             <Footerr />
             <Bottomfooterr/>

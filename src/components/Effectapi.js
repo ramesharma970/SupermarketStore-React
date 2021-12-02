@@ -16,11 +16,11 @@ const Effectapi = () => {
         })
         .then(res => res.json())
         .then(data => {
-           console.log(data.data[3].sectionDetails.brands);
-          // console.log(data.data[0].details[0].images);
+            console.log(data.data[6].sectionDetails.products[0].title)
+      
           
-        const detail =data.data[3].sectionDetails.brands;
-       // console.log(detail[0].images);
+        const detail =(data.data[6].sectionDetails.products);
+      
        setBanners(detail);
             
         })
@@ -43,7 +43,7 @@ const Effectapi = () => {
                     (
                     <li key ={data.id}> 
                         <p>{data.title}</p>
-                    <img src={data.icon} alt='banner'/> </li> )
+                    <img src={data.images[0].imageName} alt='image'/> </li> )
                     )
                 }
             </ul>

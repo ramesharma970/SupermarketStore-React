@@ -50,7 +50,7 @@ const Brands = () => {
                              <Col> 
                                      <div class="brands-w3l">
                                       
-                                         <img src={data.icon} alt='brands'/>
+                                         <img src={data.icon} alt='brands_icon'/>
                                          <p><a href="#">{data.title}</a></p>
                                      </div>
                               </Col>
