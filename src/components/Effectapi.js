@@ -1,29 +1,37 @@
 import React,{useState,useEffect} from 'react'
 
 const Effectapi = () => {
-    const [banners, setBanners] =useState([ ]);
+    const [banners, setBanners] =useState([]);
+
+    const getBanners = async () => {
+        const response = await fetch(`https://uat.ordering-boafresh.ekbana.net/api/v4/newhome`,{
+
+            method:'GET',
+            
+            headers:{
+            'Api-key':"fa63647e6ac4500d4ffdd413c77487dbc8acf22dc062bb76e8566deb01107545",
+            'Warehouse-Id':"1"
+
+            }
+        })
+        .then(res => res.json())
+        .then(data => {
+           console.log(data.data[3].sectionDetails.brands);
+          // console.log(data.data[0].details[0].images);
+          
+        const detail =data.data[3].sectionDetails.brands;
+       // console.log(detail[0].images);
+       setBanners(detail);
+            
+        })
+        .catch(err => (
+            console.log(err)
+        ));
+        //console.log(await response.json())
+    }
 
     useEffect(() => {
-      fetch(`https://uat.ordering-boafresh.ekbana.net/api/v4/newhome`,{
-
-                method:'GET',
-                
-                headers:{
-                'Api-key':"fa63647e6ac4500d4ffdd413c77487dbc8acf22dc062bb76e8566deb01107545",
-                'Warehouse-Id':"1"
-
-                }
-            })
-            .then(res => res.json())
-            .then(data => {
-               // console.log(data.data);
-              // console.log(data.data[0].details[0].images);
-               setBanners(data.data)
-                
-            })
-            .catch(err => (
-                console.log(err)
-            ))
+     getBanners();
     },[])
     return (
         <div>
@@ -31,11 +39,11 @@ const Effectapi = () => {
             <ul>
                 {
                     banners.map(data =>
-                   //console.log(data.details[0].images)
+                  // console.log(data.id))
                     (
-                    <li key={data.details[0].id}> 
-                    {/* {console.log(data.details[0].id)} */}
-                    <img src={data.details[0].images} alt='banner'/> </li> )
+                    <li key ={data.id}> 
+                        <p>{data.title}</p>
+                    <img src={data.icon} alt='banner'/> </li> )
                     )
                 }
             </ul>
